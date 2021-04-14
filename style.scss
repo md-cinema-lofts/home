@@ -1,0 +1,232 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.one {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.7)), url("./src/bg.jpg");
+
+    // background-image: url("./src/bg.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    * {
+        color: white;
+    }
+    header {
+        .nav-btn {
+            outline: none;
+            border: none;
+            background: none;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        a {
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+    .container {
+        p {
+            font-size: 24px;
+        }
+    }
+    .btn-danger {
+        width: 250px;
+    }
+}
+
+.two {
+    .card {
+        width: 25%;
+        border: none;
+
+        .wraper {
+            min-height: 150px;
+        }
+        img {
+            width: 150px;
+        }
+    }
+}
+
+.three {
+    .card {
+        display: flex;
+        align-items: center;
+        border: none;
+    }
+    .grid {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.four {
+    .grid {
+        .ml-fix {
+            margin-left: 20px !important;
+        }
+
+        button {
+            a {
+                text-decoration: none !important;
+                color: white;
+            }
+        }
+
+        .card .modal button {
+            margin: 0;
+        }
+
+        .card .modal a {
+            // border: 1px blue solid !important;
+            height: 100%;
+        }
+        .hidden {
+            display: none;
+        }
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        .card {
+            height: fit-content;
+        }
+        .buy {
+            border-radius: 0 0 5px 5px;
+            padding: 15px;
+        }
+        button .btn-secondary.btn-no {
+            border: 5px red solid;
+            background: #efefef !important;
+        }
+
+        h2 {
+            font-size: 18px;
+        }
+
+        li {
+            margin-top: 10px;
+        }
+        .modal-body {
+            margin-top: -30px;
+
+            label {
+                margin-top: 5px;
+            }
+            input,
+            select {
+                color: grey;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+
+            .added {
+                input {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+.five {
+    a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        font-size: 24px;
+    }
+}
+
+.six {
+    .grid {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+
+        img {
+            width: 70px;
+            height: 70px;
+            margin-right: 20px;
+            border-radius: 100%;
+        }
+    }
+}
+
+.seven {
+    img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .three {
+        .grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    .four {
+        .card {
+            max-width: 300px;
+        }
+    }
+    .six {
+        .grid {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+@media screen and (max-width: 900px) {
+    .four {
+        .grid {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+    section {
+        width: 100%;
+    }
+    .six {
+        .feedback {
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                margin-bottom: 50px;
+            }
+        }
+    }
+    .one {
+        background-size: auto;
+        header {
+            padding-top: 50px;
+            flex-direction: column;
+            button {
+                margin: 5px;
+            }
+            a {
+                margin: 10px;
+            }
+        }
+    }
+    .two {
+        flex-direction: column;
+        align-items: center;
+        .card {
+            width: 90%;
+        }
+    }
+    .three {
+        .grid {
+            grid-template-columns: 1fr;
+        }
+    }
+}

@@ -1,0 +1,247 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.one {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.527)), to(rgba(0, 0, 0, 0.7))), url("./src/bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.7)), url("./src/bg.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  min-height: 500px;
+}
+
+.one * {
+  color: white;
+}
+
+.one header .nav-btn {
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.one header a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.one .container p {
+  font-size: 24px;
+}
+
+.one .btn-danger {
+  width: 250px;
+}
+
+.two .card {
+  width: 25%;
+  border: none;
+}
+
+.two .card .wraper {
+  min-height: 150px;
+}
+
+.two .card img {
+  width: 150px;
+}
+
+.three .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+}
+
+.three .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.four .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.four .grid .ml-fix {
+  margin-left: 20px !important;
+}
+
+.four .grid button a {
+  text-decoration: none !important;
+  color: white;
+}
+
+.four .grid .card .modal button {
+  margin: 0;
+}
+
+.four .grid .card .modal a {
+  height: 100%;
+}
+
+.four .grid .hidden {
+  display: none;
+}
+
+.four .grid .card {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.four .grid .buy {
+  border-radius: 0 0 5px 5px;
+  padding: 15px;
+}
+
+.four .grid button .btn-secondary.btn-no {
+  border: 5px red solid;
+  background: #efefef !important;
+}
+
+.four .grid h2 {
+  font-size: 18px;
+}
+
+.four .grid li {
+  margin-top: 10px;
+}
+
+.four .grid .modal-body {
+  margin-top: -30px;
+}
+
+.four .grid .modal-body label {
+  margin-top: 5px;
+}
+
+.four .grid .modal-body input,
+.four .grid .modal-body select {
+  color: grey;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.four .grid .modal-body .added input {
+  margin-right: 5px;
+}
+
+.five a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+}
+
+.six .grid {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.six .grid img {
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+  border-radius: 100%;
+}
+
+.seven img {
+  width: 25px;
+  height: 25px;
+}
+
+@media screen and (max-width: 1600px) {
+  .three .grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .four .card {
+    max-width: 300px;
+  }
+  .six .grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .four .grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  section {
+    width: 100%;
+  }
+  .six .feedback {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .six .feedback img {
+    margin-bottom: 50px;
+  }
+  .one {
+    background-size: auto;
+  }
+  .one header {
+    padding-top: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .one header button {
+    margin: 5px;
+  }
+  .one header a {
+    margin: 10px;
+  }
+  .two {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .two .card {
+    width: 90%;
+  }
+  .three .grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=style.css.map */

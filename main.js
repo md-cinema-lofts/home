@@ -253,7 +253,7 @@ ru = [
 
 document.querySelector('.btn-ln-ro').onclick=()=>  document.querySelectorAll('.lang').forEach((elem, index) => elem.innerText = ro[index])
 document.querySelector('.btn-ln-ru').onclick=()=> document.querySelectorAll('.lang').forEach((elem, index) => elem.innerText = ru[index])
-
+document.querySelector('.btn-ln-ro').click()
 
 
 // вопросы

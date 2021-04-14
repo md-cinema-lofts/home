@@ -1,7 +1,12 @@
 html {
     scroll-behavior: smooth;
 }
-
+.languages {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 999;
+}
 .one {
     background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.7)), url("./src/bg.jpg");
 

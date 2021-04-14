@@ -2,6 +2,13 @@ html {
   scroll-behavior: smooth;
 }
 
+.languages {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 999;
+}
+
 .one {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.527)), to(rgba(0, 0, 0, 0.7))), url("./src/bg.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.7)), url("./src/bg.jpg");
